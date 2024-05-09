@@ -20,10 +20,6 @@ class HomeController extends GetxController {
       var responseData = await _homeRepository.getWeather();
       weathers.value = responseData;
       update();
-      // users.isEmpty
-      //     ? userStatus.value = StateApi.empty
-      //     : userStatus.value = StateApi.success;
-      // empty or success
     } catch (e) {
       // error
       weatherStatus.value = StateApi.error;
